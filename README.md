@@ -10,6 +10,16 @@ The fortran program requires in input data file in Cornell Condensed format, con
 
 Most of this library has been adopted from the CornPy package (https://github.com/maurobio/cornpy), and the biplot function has been adopted from the ecopy package (https://github.com/Auerilas/ecopy). The csv files under the /data directory have been copied from the CornPy package.
 
+# Installation
+
+1. Install the GNU Fortran Compiler (gfortran) from [here](https://gcc.gnu.org/wiki/GFortranBinaries). Make sure the gfortran binary is available in the PATH.
+2. Clone this repository
+
+    `git clone https://github.com/Lennart401/decorana.git`
+3. Install the package using pip
+
+    `pip install .`
+
 # License
 **DECORANA** is distributed under the GNU General Public License
 
