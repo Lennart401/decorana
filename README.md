@@ -6,7 +6,7 @@ This modified version uses the "strict" convergence criteria of Oksanen & Minchi
 
 This library ships with the original fortran source code of the DECORANA program, which is compiled every time the decorana function is called. Thus, the GNU Fortran Compiler (gfortran) is required to be installed on your system and available in the path. The wrapper checks for the availability of gfortran and raises an error if it is not found. You can get the fortran compiler from [here](https://gcc.gnu.org/wiki/GFortranBinaries). For ubuntu, you can install it as package using the command `sudo apt install gfortran`. 
 
-The fortran program requires in input data file in Cornell Condensed format, containing the community data to be analysed. The layout of this file should follow the same rules as for the original versions of DECORANA. The __write_cep() function included in this package will automatically convert a pandas dataframe into the required format for input to the program.
+The fortran program requires in input data file in Cornell Condensed format, containing the community data to be analysed. The layout of this file should follow the same rules as for the original versions of DECORANA. The __write_cep() function included in this package will automatically convert a pandas dataframe into the required format for input to the program. More information can be found here: http://ordination.okstate.edu/formats.htm.
 
 Most of this library has been adopted from the CornPy package (https://github.com/maurobio/cornpy), and the biplot function has been adopted from the ecopy package (https://github.com/Auerilas/ecopy). The csv files under the /data directory have been copied from the CornPy package.
 
